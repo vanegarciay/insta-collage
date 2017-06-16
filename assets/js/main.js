@@ -1,3 +1,5 @@
+/*VALIDACIONES PARA FORMULARIO*/
+
 var inicioSesion = document.getElementById("iniciarSesion");
 var usernameInput = document.getElementById("username");
 var passwordInput = document.getElementById("input-password");
@@ -16,6 +18,16 @@ function validateForm(){
 
     validateUsername(username);
     validatePass(constrasenia);
+
+    login();
+}
+
+function login() {
+    var errores = document.getElementsByClassName("error")[0];
+
+    if (errores == null) {
+        location.href = "dragdrop.html";
+    }
 }
 
 function validateUsername(username) {
@@ -49,6 +61,7 @@ function showError(clase,mensaje){
     if(span==null) {
         var span_mensaje = document.createElement("span");
         span_mensaje.setAttribute("id", clase);
+        span_mensaje.setAttribute("class", "error");
         var texto = document.createTextNode(mensaje);
         padre.appendChild(span_mensaje);
         span_mensaje.appendChild(texto);
