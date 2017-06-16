@@ -1,0 +1,147 @@
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+    background: rgba(150,166,97,1);
+    background: -moz-linear-gradient(top, rgba(150,166,97,1) 0%, rgba(203,122,84,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(150,166,97,1)), color-stop(100%, rgba(203,122,84,1)));
+    background: -webkit-linear-gradient(top, rgba(150,166,97,1) 0%, rgba(203,122,84,1) 100%);
+    background: -o-linear-gradient(top, rgba(150,166,97,1) 0%, rgba(203,122,84,1) 100%);
+    background: -ms-linear-gradient(top, rgba(150,166,97,1) 0%, rgba(203,122,84,1) 100%);
+    background: linear-gradient(to bottom, rgba(150,166,97,1) 0%, rgba(203,122,84,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96a661', endColorstr='#cb7a54', GradientType=0 );
+}
+
+
+/* --------------------------------------------------
+    :: Login Section
+    -------------------------------------------------- */
+.btndrop {
+    background: none;
+    border: none;
+}
+
+.btndrop li a, .btndrop li a:hover, .btndrop li a:active {
+    color: white;
+}
+
+#login {
+    padding-top: 80px;
+}
+#login .form-wrap {
+    width: 85%;
+    margin: 0 auto;
+}
+#login img {
+    width: 50%;
+    max-width: 250px;
+}
+#login .form-group {
+    margin-bottom: 1em;
+}
+
+#login .btn.btn-custom {
+    font-size: 14px;
+    margin-bottom: 20px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#login .btn.btn-custom:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+}
+
+#login .forget {
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    padding-bottom: 20px;
+}
+
+#line {
+    color: black;
+    position: relative;
+    margin-top: 20px;
+}
+
+/*    --------------------------------------------------
+    :: Inputs & Buttons
+    -------------------------------------------------- */
+.form-control {
+    background: rgba(255,255,255,0.1);
+    padding: 1.5em;
+    border: none;
+    color: white;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: white;
+    font-size: 0.9em;
+}
+
+/*    --------------------------------------------------
+    :: Extras
+------------------------------------------------------ */
+.separator-line {
+    position: relative;
+}
+
+.separator-line hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.separator-line i {
+    position: absolute;
+    top: -5px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/*    --------------------------------------------------
+    :: Footer
+    -------------------------------------------------- */
+#footer {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1em;
+    text-align: center;
+    padding-top: 1.2em;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(0,0,0,0.1);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.cat-modal {
+    width: 100%;
+}
+
+.redesiniciar {
+    background: none;
+    border: none;
+    padding: 20px;
+    color: white;
+}
+
+.redesiniciar i {
+    font-size: 1.4em;
+    padding: 3px;
+}

@@ -7,13 +7,93 @@
     <!-- FontAwesome -->
     <script src="https://use.fontawesome.com/b432f04897.js"></script>
     <!-- Fonts -->
-    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- CDN Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- main.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+<!-- SECCION DE DROPDOWN LENGUAJE -->
+<div class="container">
+  <div class="dropdown text-center">
+    <button class="btn dropdown-toggle btndrop" type="button" data-toggle="dropdown">Idioma: español (España)
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Chilencis</a></li>
+      <li><a href="#">Ingles</a></li>
+      <li><a href="#">Francés</a></li>
+    </ul>
+  </div>
+</div>
+<!-- SECCION DE LOGIN -->
+<section id="login">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="form-wrap text-center">
+                <img src="assets/img/inta-letra.png">
+                    <form role="form" autocomplete="off">
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Nombre de Usuario</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Nombre de usuario">
+                        </div>
+                        <div class="form-group">
+                            <label for="key" class="sr-only">Contraseña</label>
+                            <input type="password" name="key" class="form-control" placeholder="Contraseña">
+                        </div>
+                        <input type="submit" class="btn btn-custom btn-block" value="Iniciar sesión">
+                    </form>
+                    <a href="#" class="forget" data-toggle="modal" data-target="#modal-para-todos">¿Has olvidado tu información de inicio de sesión?<strong> Obten ayuda.</strong></a>
+                    <div class="separator-line">
+                        <hr id="line">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <button class="redesiniciar" data-toggle="modal" data-target="#modal-para-todos"><i class="fa fa-facebook-square" aria-hidden="true"></i> <strong>Iniciar sesión con Facebook</strong></button>
+                </div>
+            </div> <!-- /.col-xs-12 -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</section>
+
+<div id="modal-para-todos" class="modal fade forget-modal" tabindex="-1" role="dialog" aria-labelledby="myForgetModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                    <span class="sr-only">Close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/gato874_f.jpg" class="cat-modal">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div> <!-- /.modal-content -->
+    </div> <!-- /.modal-dialog -->
+</div> <!-- /.modal -->
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <p>¿No tienes una cuenta? <a href="#" data-toggle="modal" data-target="#modal-para-todos"><strong>Registrate</strong></a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
     <!-- CDN JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- CDN Bootstrap JS -->
