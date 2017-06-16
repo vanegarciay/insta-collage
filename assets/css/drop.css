@@ -18,17 +18,33 @@ body {
 }
 
 #imagenes img, .marco img {
-    width: 100%;
-}
-
-.img-padding {
     padding: 0.1em;
 }
 
+.marco img { 
+    width: 100%;
+}
+
+#imagenes img {
+    padding: 0.1em;
+    width: 23%;
+    cursor: move;
+}
+
+#imagenes {
+    text-align: center;
+}
+
 .photoboth {
-    padding: 30px;
+    padding-top: 1.7em;
+    padding-bottom: 1em;
+    color: #8ea5f9;
 }
 
 .recibe {
     padding-top: 30px;
+}
+
+.padding-drop {
+    padding: 0.1em;
 }
